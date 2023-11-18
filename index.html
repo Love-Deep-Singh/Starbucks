@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="header">
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <ul>
+            <li class="links"><a href="" >Home</a></li>
+            <li class="links"><a href="" >What's new</a></li>
+            <li class="links"><a href="" > Contact</a></li>
+            <li class="links"><a href="" >Menu</a></li>
+        </ul>
+    </div> 
+    <div class="container">
+        <div class="textcontainer">
+        <h1>its not just coffe <br> its <span>starbucks</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, error dolores necessitatibus totam cum sit voluptatem soluta amet quod facilis aut, dolorum sunt?</p>
+        </div>
+        <img class="starbucks" src="./images/img1.png" alt="">
+    
+    <ul class="thumb">
+        <li><img src="./images/thumb1.png" onCLick="Change('./images/img1.png');Changecircle('#017143')" alt=""></li>
+        <li><img src="./images/thumb2.png" onCLick="Change('./images/img2.png');Changecircle('#eb7495')" alt=""></li>
+        <li><img src="./images/thumb3.png" onCLick="Change('./images/img3.png');Changecircle('#d752b1')"  alt=""></li>
+    </ul>
+    </div>
+    <script>
+        function Change(anything) {
+            document.querySelector('.starbucks').src= anything;
+        }
+        function Changecircle(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+
+</html>
